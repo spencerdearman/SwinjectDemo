@@ -7,7 +7,7 @@
 That means the presentation logic never needs to know whether notes are stored:
 
 - in memory for a disposable free-tier session
-- in Core Data for persistent premium storage
+- in SwiftData for persistent premium storage
 
 Swinject chooses the implementation at runtime, so the view model stays clean and reusable.
 
@@ -16,7 +16,7 @@ Swinject chooses the implementation at runtime, so the view model stays clean an
 - `Note.swift`: simple domain model
 - `NoteStorageService.swift`: shared storage contract
 - `InMemoryNoteService.swift`: Whiteboard tier storage
-- `CoreDataNoteService.swift`: Journal tier storage
+- `SwiftDataNoteService.swift`: Journal tier storage
 - `NotesViewModel.swift`: MVVM presentation logic
 - `AppContainer.swift`: Swinject registrations and runtime selection
 - `AppBootstrapper.swift`: app-level state and container rebuild when the tier changes
@@ -36,7 +36,7 @@ Show `NotesViewModel.init(storageService:)`.
 
 Key message:
 
-`NotesViewModel` never imports Core Data and never knows whether it received an array-backed or database-backed service.
+`NotesViewModel` never imports SwiftData and never knows whether it received an array-backed or persistent service.
 
 ### 3. Show runtime registration
 
@@ -44,7 +44,7 @@ In `AppContainer`, point out:
 
 - `UserDefaults` decides whether the user is premium
 - the container registers `InMemoryNoteService` for free users
-- the container registers `CoreDataNoteService` for premium users
+- the container registers `SwiftDataNoteService` for premium users
 - `NotesViewModel` resolves the protocol, not a concrete type
 
 ### 4. Show the UI indicator

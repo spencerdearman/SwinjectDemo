@@ -2,19 +2,19 @@
 //  SwinjectDemoApp.swift
 //  SwinjectDemo
 //
-//  Created by Spencer Dearman on 4/27/26.
+//  Created by Spencer Dearman.
 //
 
 import SwiftUI
 
 @main
 struct SwinjectDemoApp: App {
-    @StateObject private var bootstrapper = AppBootstrapper()
-
+    @StateObject private var environment = AppEnvironment()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(bootstrapper)
+                .environmentObject(environment)
         }
     }
 }

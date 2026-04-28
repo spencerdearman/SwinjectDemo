@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4D04E3DB2FA04C5100278495 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4D04E3DA2FA04C5100278495 /* Swinject */; };
+		4D66489F2FA06A4900C09730 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 4D66489E2FA06A4900C09730 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D04E3C62FA04C0E00278495 /* SwinjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D66489E2FA06A4900C09730 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -52,6 +54,7 @@
 			children = (
 				4D04E3C82FA04C0E00278495 /* SwinjectDemo */,
 				4D04E3C72FA04C0E00278495 /* Products */,
+				4D66489E2FA06A4900C09730 /* AppIcon.icon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D66489F2FA06A4900C09730 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
