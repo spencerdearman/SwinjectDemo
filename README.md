@@ -1,6 +1,9 @@
 # Swinject Framework Demo
-### Spencer Dearman
-
+## Author
+- **Name:** Spencer Dearman
+- **UCID:** 12340675
+- **UChicago Email:** dearmanspencer@uchicago.edu
+- **Slack Username:** Spencer Dearman
 
 ## Swinject Framework
 **GitHub Repo:** https://github.com/swinject/swinject
